@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   font-family:
     system-ui,
@@ -93,16 +100,17 @@ button {
       .icon {
         width: 3rem;
         height: 3rem;
-        background-image: -webkit-gradient(
-          linear,
-          left top, right bottom,
-          from(var(--color-orange-500)),
-          to(var(--color-red-500))
-        );
         background-image: -o-linear-gradient(
           top left,
           var(--color-orange-500),
           var(--color-red-500)
+        );
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right bottom,
+          from(var(--color-orange-500)),
+          to(var(--color-red-500))
         );
         background-image: linear-gradient(
           to bottom right,
@@ -156,8 +164,8 @@ button {
           display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
           gap: 0.625rem;
           cursor: pointer;
 
@@ -201,18 +209,19 @@ button {
 
 #main {
   #content {
-    background-image: -webkit-gradient(
-      linear,
-      left top, right bottom,
-      from(var(--color-orange-50)),
-      color-stop(var(--color-amber-50)),
-      to(var(--color-yellow-50))
-    );
     background-image: -o-linear-gradient(
       top left,
       var(--color-orange-50),
       var(--color-amber-50),
       var(--color-yellow-50)
+    );
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(var(--color-orange-50)),
+      color-stop(var(--color-amber-50)),
+      to(var(--color-yellow-50))
     );
     background-image: linear-gradient(
       to bottom right,
@@ -270,8 +279,8 @@ button {
                   display: flex;
                   -webkit-box-orient: vertical;
                   -webkit-box-direction: normal;
-                      -ms-flex-direction: column;
-                          flex-direction: column;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
 
                   i {
                     width: 100%;
@@ -381,11 +390,11 @@ button {
                   display: -ms-flexbox;
                   display: flex;
                   -webkit-box-pack: center;
-                      -ms-flex-pack: center;
-                          justify-content: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
                   -webkit-box-align: center;
-                      -ms-flex-align: center;
-                          align-items: center;
+                  -ms-flex-align: center;
+                  align-items: center;
                   color: var(--color-orange-600);
                   background-color: var(--color-orange-100);
                   border-radius: 0.75rem;
@@ -440,14 +449,14 @@ button {
               border-bottom: 0.0625rem solid var(--color-gray-200);
               gap: 0.5rem;
               -ms-flex-wrap: nowrap;
-                  flex-wrap: nowrap;
+              flex-wrap: nowrap;
 
               .nav-item {
                 -webkit-box-flex: 1;
-                    -ms-flex-positive: 1;
-                        flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
                 -ms-flex-negative: 0;
-                    flex-shrink: 0;
+                flex-shrink: 0;
 
                 button {
                   background-color: transparent;
@@ -491,16 +500,17 @@ button {
                   gap: 0.875rem;
                   border-radius: 1rem;
                   padding: 1.5rem;
-                  background-image: -webkit-gradient(
-                    linear,
-                    left top, right bottom,
-                    from(var(--color-orange-50)),
-                    to(var(--color-amber-50))
-                  );
                   background-image: -o-linear-gradient(
                     top left,
                     var(--color-orange-50),
                     var(--color-amber-50)
+                  );
+                  background-image: -webkit-gradient(
+                    linear,
+                    left top,
+                    right bottom,
+                    from(var(--color-orange-50)),
+                    to(var(--color-amber-50))
                   );
                   background-image: linear-gradient(
                     to bottom right,
@@ -675,22 +685,23 @@ button {
               }
             }
 
-            & > button {
+            a[href="#content"] {
               margin-top: 1.5rem;
               padding: 0.75rem 1.5rem;
               font-weight: 600;
               border: none;
               color: var(--color-white);
-              background-image: -webkit-gradient(
-                linear,
-                left top, right top,
-                from(var(--color-orange-500)),
-                to(var(--color-red-500))
-              );
               background-image: -o-linear-gradient(
                 left,
                 var(--color-orange-500),
                 var(--color-red-500)
+              );
+              background-image: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(var(--color-orange-500)),
+                to(var(--color-red-500))
               );
               background-image: linear-gradient(
                 to right,
@@ -698,24 +709,26 @@ button {
                 var(--color-red-500)
               );
               border-radius: 0.75rem;
+              text-decoration: none;
               -webkit-transition: var(--transition);
               -o-transition: var(--transition);
               transition: var(--transition);
 
               &:hover {
                 -webkit-transform: scale(1.05);
-                    -ms-transform: scale(1.05);
-                        transform: scale(1.05);
-                background-image: -webkit-gradient(
-                  linear,
-                  left top, right top,
-                  from(var(--color-orange-600)),
-                  to(var(--color-red-600))
-                );
+                -ms-transform: scale(1.05);
+                transform: scale(1.05);
                 background-image: -o-linear-gradient(
                   left,
                   var(--color-orange-600),
                   var(--color-red-600)
+                );
+                background-image: -webkit-gradient(
+                  linear,
+                  left top,
+                  right top,
+                  from(var(--color-orange-600)),
+                  to(var(--color-red-600))
                 );
                 background-image: linear-gradient(
                   to right,
@@ -735,4 +748,3 @@ button {
     }
   }
 }
-

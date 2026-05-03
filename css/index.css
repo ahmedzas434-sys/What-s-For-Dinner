@@ -4,6 +4,12 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -457,7 +463,7 @@ button {
   margin-bottom: 0;
   color: var(--color-gray-700);
 }
-#main #content > div > div .rightContent .inner > button {
+#main #content > div > div .rightContent .inner a[href="#content"] {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
@@ -465,13 +471,14 @@ button {
   color: var(--color-white);
   background-image: linear-gradient(to right, var(--color-orange-500), var(--color-red-500));
   border-radius: 0.75rem;
+  text-decoration: none;
   transition: var(--transition);
 }
-#main #content > div > div .rightContent .inner > button:hover {
+#main #content > div > div .rightContent .inner a[href="#content"]:hover {
   transform: scale(1.05);
   background-image: linear-gradient(to right, var(--color-orange-600), var(--color-red-600));
 }
-#main #content > div > div .rightContent .inner > button i {
+#main #content > div > div .rightContent .inner a[href="#content"] i {
   margin-right: 0.1875rem;
   font-size: 0.875rem;
 }/*# sourceMappingURL=index.css.map */

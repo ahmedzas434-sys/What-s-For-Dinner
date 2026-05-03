@@ -1279,7 +1279,9 @@ function displayInformation() {
                   </div>
                 </div>
 
-                <button onclick="displayInformation()"><i class="fa-solid fa-rotate"></i> Try Another Recipe</button>
+                <a href="#content" class="button" onclick="displayInformation()">
+                  <i class="fa-solid fa-rotate"></i> Try Another Recipe
+                </a>
               </div>`;
 
   leftContent.innerHTML = left;
